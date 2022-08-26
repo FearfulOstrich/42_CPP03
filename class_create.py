@@ -91,8 +91,8 @@ def create_cpp(classname, folder):
 
 std::ostream&\toperator<<(std::ostream& os, const {0}& obj)
 {{
-\to << "something";
-\treturn (o);
+\tos << "something";
+\treturn (os);
 }}
 
 /*==============================================================================
