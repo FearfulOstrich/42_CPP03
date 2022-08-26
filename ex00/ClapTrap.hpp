@@ -6,7 +6,7 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 11:45:57 by aalleon           #+#    #+#             */
-/*   Updated: 2022/08/25 18:41:23 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/08/26 10:11:15 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ class ClapTrap
 		ClapTrap& operator=(const ClapTrap& other);
 
 		//Getters
-		std::string&	getName(void) const;
-		unsigned int	getLife(void) const;
-		unsigned int	getEnergy(void) const;
-		unsigned int	getAttack(void) const;
+		const std::string&	getName(void) const;
+		unsigned int		getLife(void) const;
+		unsigned int		getEnergy(void) const;
+		unsigned int		getAttack(void) const;
 
 		//Setters
 		void	setName(const std::string &name);

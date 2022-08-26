@@ -6,7 +6,7 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 14:35:17 by aalleon           #+#    #+#             */
-/*   Updated: 2022/08/25 18:41:26 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/08/26 10:10:39 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ ClapTrap&	ClapTrap::operator=(const ClapTrap& other)
 	Getters.
 ==============================================================================*/
 
-std::string&	ClapTrap::getName(void) const
+const std::string&	ClapTrap::getName(void) const
 {
 	return (this->_name);
 }
