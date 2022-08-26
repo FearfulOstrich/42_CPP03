@@ -6,7 +6,7 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 17:41:50 by aalleon           #+#    #+#             */
-/*   Updated: 2022/08/25 18:40:49 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/08/26 12:02:24 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	main()
 {
 	{
 		ClapTrap	a;
-		ClapTrap	b(std::string("robert"));
+		ClapTrap	b("Robert");
 		ClapTrap	c = b;
 
 		a = b;
@@ -25,7 +25,7 @@ int	main()
 		std::cout << c << std::endl;
 	}
 	{
-		ClapTrap	a(std::string("Norbert"));
+		ClapTrap	a("Norbert");
 
 		a.attack("Henry");
 		std::cout << a << std::endl;
