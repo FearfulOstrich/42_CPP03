@@ -1,38 +1,50 @@
-#include "ClavTrap.hpp"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ScavTrap.cpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: antoine <antoine@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/09/02 15:22:37 by antoine           #+#    #+#             */
+/*   Updated: 2022/09/02 15:22:38 by antoine          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "ScavTrap.hpp"
 
 /*==============================================================================
 	Constructors.
 ==============================================================================*/
 
-ClavTrap::ClavTrap(void)
+ScavTrap::ScavTrap(void)
 	: ClapTrap("", 100, 50, 20)
 	, _is_keeping(0)
 {
-	std::cout << "ClavTrap Default Constructor called." << std::endl;
+	std::cout << "ScavTrap Default Constructor called." << std::endl;
 	return ;
 }
 
-ClavTrap::ClavTrap(const ClavTrap& other)
+ScavTrap::ScavTrap(const ScavTrap& other)
 {
-	std::cout << "ClavTrap Copy Constructor called." << std::endl;
+	std::cout << "ScavTrap Copy Constructor called." << std::endl;
 	*this = other;
 	return ;
 }
 
-ClavTrap::ClavTrap(const std::string& name)
+ScavTrap::ScavTrap(const std::string& name)
 	: ClapTrap(name, 100, 50, 20)
 	, _is_keeping(0)
 {
-	std::cout << "ClavTrap Constructor called." << std::endl;
+	std::cout << "ScavTrap Constructor called." << std::endl;
 }
 
 /*==============================================================================
 	Destructor.
 ==============================================================================*/
 
-ClavTrap::~ClavTrap(void)
+ScavTrap::~ScavTrap(void)
 {
-	std::cout << "ClavTrap Destructor called." << std::endl;
+	std::cout << "ScavTrap Destructor called." << std::endl;
 	return ;
 }
 
@@ -40,9 +52,9 @@ ClavTrap::~ClavTrap(void)
 	Operator overloads.
 ==============================================================================*/
 
-ClavTrap&	ClavTrap::operator=(const ClavTrap& other)
+ScavTrap&	ScavTrap::operator=(const ScavTrap& other)
 {
-	std::cout << "ClavTrap assignment operator called." << std::endl;
+	std::cout << "ScavTrap assignment operator called." << std::endl;
 	if (this != &other)
 	{
 		this->_name = other._name;
@@ -54,7 +66,7 @@ ClavTrap&	ClavTrap::operator=(const ClavTrap& other)
 	return (*this);
 }
 
-std::ostream&	operator<<(std::ostream& os, const ClavTrap& obj)
+std::ostream&	operator<<(std::ostream& os, const ScavTrap& obj)
 {
 	os << static_cast<const ClapTrap&>(obj);
 	os << " keeping gate: " << obj.getIsKeeping() << ";";
@@ -65,7 +77,7 @@ std::ostream&	operator<<(std::ostream& os, const ClavTrap& obj)
 	Getters.
 ==============================================================================*/
 
-bool	ClavTrap::getIsKeeping(void) const
+bool	ScavTrap::getIsKeeping(void) const
 {
 	return (this->_is_keeping);
 }
@@ -78,7 +90,7 @@ bool	ClavTrap::getIsKeeping(void) const
 	Member functions.
 ==============================================================================*/
 
-void	ClavTrap::guardGate(void)
+void	ScavTrap::guardGate(void)
 {
 	if (this->_is_keeping)
 	{
