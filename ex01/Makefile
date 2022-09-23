@@ -6,7 +6,7 @@
 
 ## Compilation
 
-NAME	=	clavtrap
+NAME	=	scavtrap
 
 CC		=	c++
 
@@ -16,7 +16,7 @@ FLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCDIR	=
 
-SRCFILE	=	main.cpp ClapTrap.cpp ClavTrap.cpp
+SRCFILE	=	main.cpp ClapTrap.cpp ScavTrap.cpp
 
 SRC		=	$(addprefix $(SRCDIR), $(SRCFILE))
 

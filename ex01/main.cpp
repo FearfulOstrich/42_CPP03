@@ -6,25 +6,25 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 17:41:50 by aalleon           #+#    #+#             */
-/*   Updated: 2022/08/26 14:47:39 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/09/02 13:27:08 by antoine          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
-#include "ClavTrap.hpp"
+#include "ScavTrap.hpp"
 
 int	main()
 {
 	{
 		ClapTrap	rob("Robert");
-		ClavTrap	tim("Timothy");
+		ScavTrap	tim("Timothy");
 
 		std::cout << rob << std::endl;
 		std::cout << tim << std::endl;
 	}
 	std::cout << std::endl << std::endl;
 	{
-		ClavTrap	norb("Norbert");
+		ScavTrap	norb("Norbert");
 
 		norb.attack("Jeremy");
 		std::cout << norb << std::endl;
