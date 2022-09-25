@@ -20,10 +20,12 @@ class DiamondTrap: public ScavTrap, public FlagTrap
 private:
 
 protected:
+	// attributes
+	std::string	_name;
 
 public:
 	// Constructors
-	DiamondTrap();
+	DiamondTrap(std::string name);
 	DiamondTrap(const DiamondTrap& other);
 
 	// Destructors
@@ -34,6 +36,7 @@ public:
 
 	// Accessors (getters should return by value or const-reference)
 	// Member functions
+	void	whoAmI(void);
 };
 
 std::ostream&	operator<<(std::ostream& os, const DiamondTrap& obj);
