@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   DiamondTrap.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoine <antoine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 15:24:36 by antoine           #+#    #+#             */
-/*   Updated: 2022/09/02 15:25:09 by antoine          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:40:56 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,11 @@
 # define _DIAMONDTRAP_HPP_
 
 # include <iostream>
+# include "ClapTrap.hpp"
+# include "ScavTrap.hpp"
+# include "FragTrap.hpp"
 
-class DiamondTrap: public ScavTrap, public FlagTrap
+class DiamondTrap: public ScavTrap, public FragTrap
 {
 private:
 
@@ -35,7 +38,11 @@ public:
 	DiamondTrap&	operator=(const DiamondTrap& other);
 
 	// Accessors (getters should return by value or const-reference)
+	void	setName(const std::string &name);
+	const std::string&	getName(void) const;
+
 	// Member functions
+	void	attack(const std::string& target);
 	void	whoAmI(void);
 };
 

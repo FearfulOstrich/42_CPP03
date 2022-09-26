@@ -6,7 +6,7 @@
 
 ## Compilation
 
-NAME	=	flagtrap
+NAME	=	fragtrap
 
 CC		=	clang++
 
@@ -16,7 +16,7 @@ FLAGS	=	-Wall -Wextra -Werror -std=c++98
 
 SRCDIR	=
 
-SRCFILE	=	main.cpp ClapTrap.cpp ScavTrap.cpp FlagTrap.cpp
+SRCFILE	=	main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 SRC		=	$(addprefix $(SRCDIR), $(SRCFILE))
 

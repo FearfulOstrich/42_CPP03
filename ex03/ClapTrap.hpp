@@ -18,6 +18,16 @@
 
 class ClapTrap
 {
+protected:
+	//Constructor for derived
+	ClapTrap(const std::string& name, int life, int energy, int attack);
+	
+	//attributes
+	std::string		_name;
+	unsigned int	_life;
+	unsigned int	_energy;
+	unsigned int	_attack;
+
 public:
 	//Constructors
 	ClapTrap(void);
@@ -46,16 +56,6 @@ public:
 	void	attack(const std::string& target);
 	void	takeDamage(unsigned int amount);
 	void	beRepaired(unsigned int amount);
-
-protected:
-	//Constructor for derived
-	ClapTrap(const std::string& name, int life, int energy, int attack);
-	
-	//attributes
-	std::string		_name;
-	unsigned int	_life;
-	unsigned int	_energy;
-	unsigned int	_attack;
 };
 
 //Ostream <<

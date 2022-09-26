@@ -1,36 +1,36 @@
-#include "FlagTrap.hpp"
+#include "FragTrap.hpp"
 
 /*==============================================================================
 	Constructors.
 ==============================================================================*/
 
-FlagTrap::FlagTrap(void)
+FragTrap::FragTrap(void)
 	: ClapTrap("", 100, 100, 30)
 {
-	std::cout << "FlagTrap Default Constructor called." << std::endl;
+	std::cout << "FragTrap Default Constructor called." << std::endl;
 	return ;
 }
 
-FlagTrap::FlagTrap(const FlagTrap& other)
+FragTrap::FragTrap(const FragTrap& other)
 {
-	std::cout << "FlagTrap Copy Constructor called." << std::endl;
+	std::cout << "FragTrap Copy Constructor called." << std::endl;
 	*this = other;
 	return ;
 }
 
-FlagTrap::FlagTrap(const std::string& name)
+FragTrap::FragTrap(const std::string& name)
 	: ClapTrap(name, 100, 100, 30)
 {
-	std::cout << "FlagTrap Constructor called." << std::endl;
+	std::cout << "FragTrap Constructor called." << std::endl;
 }
 
 /*==============================================================================
 	Destructor.
 ==============================================================================*/
 
-FlagTrap::~FlagTrap(void)
+FragTrap::~FragTrap(void)
 {
-	std::cout << "FlagTrap Destructor called." << std::endl;
+	std::cout << "FragTrap Destructor called." << std::endl;
 	return ;
 }
 
@@ -38,9 +38,9 @@ FlagTrap::~FlagTrap(void)
 	Operator overloads.
 ==============================================================================*/
 
-FlagTrap&	FlagTrap::operator=(const FlagTrap& other)
+FragTrap&	FragTrap::operator=(const FragTrap& other)
 {
-	std::cout << "FlagTrap assignment operator called." << std::endl;
+	std::cout << "FragTrap assignment operator called." << std::endl;
 	if (this != &other)
 	{
 		this->_name = other._name;
@@ -51,7 +51,7 @@ FlagTrap&	FlagTrap::operator=(const FlagTrap& other)
 	return (*this);
 }
 
-std::ostream&	operator<<(std::ostream& os, const FlagTrap& obj)
+std::ostream&	operator<<(std::ostream& os, const FragTrap& obj)
 {
 	os << static_cast<const ClapTrap&>(obj);
 	return (os);
@@ -69,7 +69,7 @@ std::ostream&	operator<<(std::ostream& os, const FlagTrap& obj)
 	Member functions.
 ==============================================================================*/
 
-void	FlagTrap::highFiveGuys(void)
+void	FragTrap::highFiveGuys(void)
 {
 	std::cout << "Hey! Shall we high five ? =)" << std::endl;
 	return ;

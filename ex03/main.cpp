@@ -6,26 +6,25 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 17:41:50 by aalleon           #+#    #+#             */
-/*   Updated: 2022/09/02 15:23:01 by antoine          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:32:21 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
-#include "FlagTrap.hpp"
+#include "FragTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int	main()
 {
 	{
-		ClapTrap	rob("Robert");
-		FlagTrap	tim("Timothy");
+		DiamondTrap	tom("Thomas");
 
-		std::cout << rob << std::endl;
-		std::cout << tim << std::endl;
+		std::cout << tom << std::endl;
 	}
 	std::cout << std::endl << std::endl;
 	{
-		FlagTrap	norb("Norbert");
+		DiamondTrap	norb("Norbert");
 
 		norb.attack("Jeremy");
 		std::cout << norb << std::endl;
@@ -39,6 +38,7 @@ int	main()
 		norb.attack("Tristan");
 		std::cout << norb << std::endl;
 		norb.beRepaired(40);
+		norb.whoAmI();
 		std::cout << norb << std::endl;
 		norb.attack("Killian");
 		norb.highFiveGuys();

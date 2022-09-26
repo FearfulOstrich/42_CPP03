@@ -6,26 +6,26 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/25 17:41:50 by aalleon           #+#    #+#             */
-/*   Updated: 2022/09/02 15:23:01 by antoine          ###   ########.fr       */
+/*   Updated: 2022/09/26 10:30:23 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
-#include "FlagTrap.hpp"
+#include "FragTrap.hpp"
 
 int	main()
 {
 	{
 		ClapTrap	rob("Robert");
-		FlagTrap	tim("Timothy");
+		FragTrap	tim("Timothy");
 
 		std::cout << rob << std::endl;
 		std::cout << tim << std::endl;
 	}
 	std::cout << std::endl << std::endl;
 	{
-		FlagTrap	norb("Norbert");
+		FragTrap	norb("Norbert");
 
 		norb.attack("Jeremy");
 		std::cout << norb << std::endl;
