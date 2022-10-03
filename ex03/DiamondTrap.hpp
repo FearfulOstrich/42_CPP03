@@ -6,12 +6,12 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 15:24:36 by antoine           #+#    #+#             */
-/*   Updated: 2022/09/26 10:40:56 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/10/03 15:51:49 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _DIAMONDTRAP_HPP_
-# define _DIAMONDTRAP_HPP_
+#ifndef DIAMONDTRAP_HPP
+# define DIAMONDTRAP_HPP
 
 # include <iostream>
 # include "ClapTrap.hpp"

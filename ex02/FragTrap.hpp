@@ -1,5 +1,17 @@
-#ifndef _FRAGTRAP_HPP_
-# define _FRAGTRAP_HPP_
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/03 15:50:58 by aalleon           #+#    #+#             */
+/*   Updated: 2022/10/03 15:51:03 by aalleon          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
 
 # include <iostream>
 # include "ClapTrap.hpp"

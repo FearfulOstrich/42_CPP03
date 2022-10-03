@@ -6,12 +6,12 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 15:22:27 by antoine           #+#    #+#             */
-/*   Updated: 2022/09/26 10:34:51 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/10/03 15:52:23 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef _SCAVTRAP_HPP_
-# define _SCAVTRAP_HPP_
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP
 
 # include <iostream>
 # include "ClapTrap.hpp"
