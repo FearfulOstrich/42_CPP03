@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoine <antoine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 15:22:37 by antoine           #+#    #+#             */
-/*   Updated: 2022/09/02 15:22:38 by antoine          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:43:09 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,6 +89,22 @@ bool	ScavTrap::getIsKeeping(void) const
 /*==============================================================================
 	Member functions.
 ==============================================================================*/
+
+void	ScavTrap::attack(const std::string& target)
+{
+	if (this->_energy == 0 || this->_life == 0)
+	{
+		std::cout << "[ScavTrap]" << this->_name << " cannot attack.";
+		std::cout << std::endl;
+		return ;
+	}
+	std::cout << "[ScavTrap]" << this->_name << " attacked " << target;
+	std::cout << " and dealt " << this->_attack << " damage." << std::endl;
+	this->_energy--;
+	std::cout << "[ScavTrap]" << this->_name << " now has " << this->_energy;
+	std::cout << " energy." << std::endl;
+	return ;
+}
 
 void	ScavTrap::guardGate(void)
 {

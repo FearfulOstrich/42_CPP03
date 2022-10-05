@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: antoine <antoine@student.42.fr>            +#+  +:+       +#+        */
+/*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 13:25:57 by antoine           #+#    #+#             */
-/*   Updated: 2022/09/02 13:26:06 by antoine          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:42:56 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ ScavTrap&	ScavTrap::operator=(const ScavTrap& other)
 
 std::ostream&	operator<<(std::ostream& os, const ScavTrap& obj)
 {
-	os << static_cast<const ClapTrap&>(obj);
+	os << "[ScavTrap]" << static_cast<const ClapTrap&>(obj);
 	os << " keeping gate: " << obj.getIsKeeping() << ";";
 	return (os);
 }
@@ -90,14 +90,32 @@ bool	ScavTrap::getIsKeeping(void) const
 	Member functions.
 ==============================================================================*/
 
+void	ScavTrap::attack(const std::string& target)
+{
+	if (this->_energy == 0 || this->_life == 0)
+	{
+		std::cout << "[ScavTrap]" << this->_name << " cannot attack.";
+		std::cout << std::endl;
+		return ;
+	}
+	std::cout << "[ScavTrap]" << this->_name << " attacked " << target;
+	std::cout << " and dealt " << this->_attack << " damage." << std::endl;
+	this->_energy--;
+	std::cout << "[ScavTrap]" << this->_name << " now has " << this->_energy;
+	std::cout << " energy." << std::endl;
+	return ;
+}
+
 void	ScavTrap::guardGate(void)
 {
 	if (this->_is_keeping)
 	{
-		std::cout << this->_name << " is already at the gate." << std::endl;
+		std::cout << "[ScavTrap]" << this->_name << " is already at the gate.";
+		std::cout << std::endl;
 		return ;
 	}
 	this->_is_keeping = 1;
-	std::cout << this->_name << " is now at the gate." << std::endl;
+	std::cout << "[ScavTrap]" << this->_name << " is now at the gate.";
+	std::cout << std::endl;
 	return ;
 }

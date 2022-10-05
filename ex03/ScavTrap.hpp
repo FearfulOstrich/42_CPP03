@@ -6,7 +6,7 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 15:22:27 by antoine           #+#    #+#             */
-/*   Updated: 2022/10/03 15:52:23 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:45:14 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ public:
 	bool	getIsKeeping(void) const;
 
 	// Member functions
+	void	attack(const std::string& target);
 	void	guardGate(void);
 };
 

@@ -6,7 +6,7 @@
 /*   By: aalleon <aalleon@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 15:51:13 by aalleon           #+#    #+#             */
-/*   Updated: 2022/10/03 15:51:14 by aalleon          ###   ########.fr       */
+/*   Updated: 2022/10/05 15:43:27 by aalleon          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ FragTrap&	FragTrap::operator=(const FragTrap& other)
 
 std::ostream&	operator<<(std::ostream& os, const FragTrap& obj)
 {
-	os << static_cast<const ClapTrap&>(obj);
+	os << "[FragTrap]" << static_cast<const ClapTrap&>(obj);
 	return (os);
 }
 
